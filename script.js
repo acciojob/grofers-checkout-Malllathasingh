@@ -3,15 +3,14 @@ getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
 const getSum = () => {
-	let prices=document.quarySelector(".price")
-	let sum=0
-	for(let key of prices){
-		sum+=Number(price.textContext)
-	}
-	alert("Total Price:" +sum)
-//Add your code here
-  
+    let prices = document.querySelectorAll(".price");
+    let sum = 0;
+
+    for (let price of prices) {
+        sum += Number(price.textContent);
+    }
+
+    alert("Total Price: " + sum);
 };
 
 getSumBtn.addEventListener("click", getSum);
-

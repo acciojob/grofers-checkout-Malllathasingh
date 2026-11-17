@@ -3,9 +3,9 @@ getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
 const getSum = () => {
-	let price=document.quarySelector(".price")
+	let prices=document.quarySelector(".price")
 	let sum=0
-	for(let key of price){
+	for(let key of prices){
 		sum+=Number(price.textContext)
 	}
 	alert("Total Price:" +sum)
